@@ -43,6 +43,16 @@ public class ManufactoryRepositoryTest {
 
     }
 
+    @Test
+    public void test_update_object() {
+
+        Assertions.assertEquals("Glock", createdManufactorer.getName());
+
+        createdManufactorer.setName("S&W");
+
+        Assertions.assertEquals("S&W", createdManufactorer.getName());
+    }
+
     //update f
 
 }
